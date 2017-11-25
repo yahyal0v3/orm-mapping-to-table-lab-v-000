@@ -41,7 +41,7 @@ class Student
   end
 
   def self.create(hash)
-    binding.pry 
+    binding.pry
     student = Student.new(name, grade)
     student.save
     student
