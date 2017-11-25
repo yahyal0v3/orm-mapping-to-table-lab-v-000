@@ -37,7 +37,6 @@ class Student
       SQL
     DB[:conn].execute(sql, self.name, self.grade)
 
-    binding.
     @id = DB[:conn].execute("SELECT * FROM students WHERE name = (?)", self.name)[-1][0]
   end
 
